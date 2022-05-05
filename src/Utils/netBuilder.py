@@ -1,7 +1,7 @@
 import numpy as np
 import keras
-from keras.models import Model, Sequential
-from keras.layers import Input, Dense, Dropout
+from tensorflow.keras.models import Model, Sequential
+from tensorflow.keras.layers import Input, Dense, Dropout
 
 def Nguyen_Widrow_init(shape, dtype=None):
     '''Nguyen-Widrow initialization for weights and biases
