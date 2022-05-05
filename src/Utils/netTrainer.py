@@ -1,5 +1,5 @@
 from tensorflow.keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint, Callback, EarlyStopping
+from tensorflow.keras.callbacks import ModelCheckpoint, Callback, EarlyStopping
 import matplotlib.pyplot as plt
 
 class netTrainer():
