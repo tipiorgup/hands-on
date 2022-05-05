@@ -45,7 +45,7 @@ class netBuilder():
             subnet = self.build_elemental_subnet(n_dense_layers, n_units,
                                                  hidden_activation,
                                                  dropout_type, dropout_ratio)
-            subnet.name = f"{element}-subnet"
+            subnet._name = f"{element}-subnet"
             elemental_subnets[element] = subnet
         return elemental_subnets
 
