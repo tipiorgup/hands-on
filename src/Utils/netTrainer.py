@@ -6,7 +6,7 @@ class netTrainer():
     def __init__(self, model, verbose = 0, folder = "model_2B_nUnit"):
         self.model = model
         self.verbose = verbose
-        self.filepath = f"{folder}/{model.layers[0].output_shape[1]}.hdf5"
+        self.filepath = f"{folder}/{model.layers[0].output_shape[0]}.hdf5"
         self.checkpointer = ModelCheckpoint(filepath=self.filepath,
                                             verbose=self.verbose,
                                             monitor='val_mean_squared_error',
